@@ -1,0 +1,239 @@
+*{
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+	margin: 0 auto;
+  z-index: 1;
+}
+
+div {
+    display: block;
+}
+
+	
+h1{
+  font-size: 7em;
+  color: white;
+  margin: 0.15em 0.75em 0 0;
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  -webkit-animation: mymove 1s ; /* Chrome, Safari, Opera */
+    animation: mymove 1s ;
+   /* -webkit- animation-delay: 2s;
+    animation-delay: 2s;*/
+   -webkit- animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-transition-timing-function: ease-in;
+   transition-timing-function: ease-in;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+	 10% {text-shadow: .1px .1px black;}
+    20% {text-shadow: .2px .2px black;}
+    30% {text-shadow: .3px .3px black;}
+    40% {text-shadow: .5px .5px black;}
+    50% {text-shadow: .7px .7px black;}
+    60% {text-shadow: .9px .9px black;}
+    70% {text-shadow: 1.2px 1.2px black;}
+    80% {text-shadow: 1.3px 1.3px black;}
+    90% {text-shadow: 1.4px 1.4px black;}
+    100% {text-shadow: 1.5px 1.5px black;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+   10% {text-shadow: .1px .1px black;}
+    20% {text-shadow: .2px .2px black;}
+    30% {text-shadow: .3px .3px black;}
+    40% {text-shadow: .5px .5px black;}
+    50% {text-shadow: .7px .7px black;}
+    60% {text-shadow: .9px .9px black;}
+    70% {text-shadow: 1.2px 1.2px black;}
+    80% {text-shadow: 1.3px 1.3px black;}
+    90% {text-shadow: 1.4px 1.4px black;}
+    100% {text-shadow: 1.5px 1.5px black;}
+}
+
+.billboard{
+	height: 44rem;
+	background: white;
+	background-image: url(images/l_torso4.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-left: 5rem;
+	background-size: cover;
+}
+
+.about{
+  background: crimson;
+  color: white;
+  height: 32rem;
+  text-align: center;
+  font-size: 2.4em;
+  padding:3rem;
+}
+
+h2{
+  font-size: 1.1em;
+}
+
+.title::before{
+  content: url(images/ljcrown1.png);
+}
+
+.title::after{
+  content: url(images/ljcrown1.png);
+}
+
+/*
+.about::after{
+   position: absolute !important;
+    z-index: 1;
+    font-size: 4em;
+    padding-left: 3rem;
+}*/
+
+/*#myVideo {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: auto;
+    z-index: 0;
+   
+}*/
+
+.vbg{
+  height: 22rem;
+  justify-content: center;
+  align-content: center;
+}
+
+video {
+ /*   width: 100vw    !important;
+    height: auto   !important;*/
+    width: auto;
+    z-index: 0;
+    filter: blur(4px);
+    overflow: none;
+}
+
+.overlay {
+    position: absolute !important;
+    z-index: 1;
+    font-size: 4em;
+    padding-left: 3rem;
+}
+
+.summary_pivot_point{
+  height: 40rem;
+  position: relative;
+  perspective: none;
+}
+
+.summary{
+	height: 100%;
+  position: absolute;
+  /*-webkit-transform-style: preserve-3d; 
+  -webkit-transform: rotateY(60deg); 
+  transform-style: preserve-3d;
+  transform: rotateY(60deg);*/
+/*  font-size: 2.5em;*/
+  padding: 3rem;
+
+}
+
+.parallax {
+  -webkit-perspective: 1px;
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: 200%;
+  scroll-behavior: smooth;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 100vh 0;
+  padding-top: 100vh;
+  padding-right: 0px;
+  padding-bottom: 100vh;
+  padding-left: 0px;
+}
+
+.parallax__layer--base {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  background-image: url(images/l_shooter.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -4;
+}
+
+.parallax__layer--back {
+ -webkit-transform: translateZ(-1px);
+  transform: translateZ(-1px);
+  -webkit-transform: translateZ(-1px) scale(2);
+  transform: translateZ(-1px) scale(2);
+  background-image: url(images/skyline_los_angeles.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.section_0{
+  height: 30rem;
+  overflow: hidden;
+  z-index: -8;
+}
+
+.section_a{
+  height: 30rem;
+  background-image: url(images/l_logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 5rem;
+  background-size: contain;
+}
+
+.section_a img{
+  position: fixed;
+}
+
+.section_b{
+  height: 30rem;
+  background-image: url(images/c_logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 5rem;
+  background-size: contain;
+}
+
+.tweets{
+  color:crimson;
+  height: 30rem;
+  text-align: center;
+  font-size: 2.4em;
+  background-image: url(images/suit.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+@supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
+  /* ... parallax styles ... */
+}
+
+
