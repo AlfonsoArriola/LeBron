@@ -109,6 +109,22 @@ h2{
    
 }*/
 
+.vidDiv{
+  position: relative;
+  height: 18rem;
+}
+
+.vidText{
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  font-size: 7em;
+  margin: 1rem;
+  color: crimson;
+  text-shadow: 1px 1px black;
+
+}
+
 .vbg{
   height: 22rem;
   justify-content: center;
@@ -118,8 +134,9 @@ h2{
 video {
  /*   width: 100vw    !important;
     height: auto   !important;*/
-    width: auto;
-    z-index: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
     filter: blur(4px);
     overflow: none;
 }
